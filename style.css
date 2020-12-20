@@ -404,7 +404,7 @@ html{
 
 /* TEXT */
 
-h1, h2, h3, h4, a{
+h1, h3, h4, a{
     font-family: 'DM Serif Display', serif;
     font-size: 1.6em;
     color: hsl(270, 9%, 17%);
@@ -435,6 +435,10 @@ section a{
     margin: 4%;
     padding: 8px;
 }
+section a:hover{
+    background-color: white;
+    color: hsl(256, 26%, 20%);
+}
 
 /* FOOTER */
 .footer-links{
@@ -451,7 +455,6 @@ footer h3{
 
 
 /* LINKS */
-
 a{
     display: inline-block;
     text-decoration: none;
@@ -459,15 +462,19 @@ a{
     border: 2px solid white;
     transition: 0.3s;
 }
-a:hover{
-    font-weight: bold;
+footer a:hover{
+    text-decoration: underline;
 }
+
 .icons{
     margin: 0 1%;
 }
+footer .icons:hover path {
+    fill: hsl(256, 26%, 20%);
+}
 
 /* TABLET LAYOUT */
-@media (min-width: 375px){
+@media (min-width: 412px){
 *{
     background-color: hotpink;
 }
